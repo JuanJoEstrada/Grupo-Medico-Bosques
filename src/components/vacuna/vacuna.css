@@ -1,0 +1,131 @@
+section.vacuna .vacunaPortada {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10%;
+  width: 100%;
+  box-shadow: 0px 0px 50px -15px black inset;
+  background: rgba(41,216,219,0.8);
+  /* border: 1px solid red; */
+}
+section.vacuna .vacunaPortada figure {
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+section.vacuna .vacunaPortada figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+section.vacuna .vacunaPortada .primeraVista {
+  /* border: 1px solid red; */
+}
+section.vacuna .vacunaPortada .primeraVista h1 {
+  font-size: 5vw;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #01578C;
+}
+section.vacuna .vacunaPortada .primeraVista hr {
+  margin: 2em auto;
+  width: 10em;
+}
+section.vacuna .vacunaPortada .primeraVista h2 {
+  font-family: sans-serif;
+  font-size: 2vw;
+  text-align: justify;
+  color: rgba(70, 70, 70, 0.856);
+}
+/* ----------------------------------------------------------------------------------------------------infoVacuna */
+section.vacuna .infoVacuna {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin: 10% auto;
+  width: 90%;
+}
+section.vacuna .infoVacuna .pregunta {
+  margin: 1em;
+  padding: 2em;
+  /* border: 1px solid #01578C; */
+  box-shadow: 0 0 20PX 0px #01578c98;
+  border-radius: 10px;
+}
+section.vacuna .infoVacuna .pregunta h2 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+section.vacuna .infoVacuna .pregunta p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+section.vacuna .infoVacuna .pregunta ul {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1em 1em 1em 2em;
+}
+/* ----------------------------------------------------------------------------------------------------imageVacuna*/
+section.vacuna .imageVacuna {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: 1em auto;
+  /* padding: 0 auto; */
+  width: 90%;
+  /* border: 1px solid red; */
+}
+section.vacuna .imageVacuna figure {
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+section.vacuna .imageVacuna figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+section.vacuna .contactoVacuna {
+  margin: 2em auto;
+  text-align: center;
+  font-size: 1.5em;
+  width: 90%;
+}
+@media only screen and (max-width: 768px) {
+  section.vacuna .vacunaPortada {
+    flex-wrap: wrap;
+  }
+  section.vacuna .vacunaPortada figure {
+    width: 40%;
+  }
+  section.vacuna .vacunaPortada .primeraVista hr {
+    margin: 1em auto;
+    width: 5em;
+  }
+  section.vacuna .vacunaPortada .primeraVista h2 {
+    margin: 0 auto;
+    font-size: 1em;
+    text-align: center;
+    /* width: 70%; */
+  }
+  section.vacuna .infoVacuna {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  section.vacuna .imageVacuna {
+    display: none;
+  }
+  section.vacuna .contactoVacuna {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  section.vacuna .vacunaPortada figure {
+    width: 70%;
+  }
+  section.vacuna .vacunaPortada .primeraVista h1 {
+    font-size: 1.7em;
+  }
+  section.vacuna .vacunaPortada .primeraVista h2 {
+    font-size: 1em;
+  }
+}

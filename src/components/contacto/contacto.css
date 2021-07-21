@@ -1,0 +1,43 @@
+section.contacto {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+section.contacto hr {
+  margin: 2em auto;
+  width: 15em;
+  border: 0;
+  border-top: 2px solid #29D8DB;
+}
+section.contacto .section1, section.contacto .section2 {
+  /* border: 1px solid red; */
+  margin: 1em 0 1em 0;
+}
+section.contacto .section3 {
+  margin: 1em 0 4em 0;
+}
+section.contacto .section1 p, section.contacto .section2 p, section.contacto .section3 p {
+  margin: 1em auto 0 auto;
+  width: 90%;
+  /* border: 1px solid red; */
+}
+section.contacto .horarios {
+  margin: 1em;
+  /* border: 1px solid red; */
+}
+section.contacto .horarios .hora{
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+section.contacto .horarios .hora p {
+  margin: 0.5em;
+  font-weight: 600;
+}
+section.contacto .horarios .hora .horaEspecial {
+  color: #29D8DB;
+}
+section.contacto .horarios .hora .dia{
+  width: 4.5em;
+  text-align: right;
+}

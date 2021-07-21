@@ -1,0 +1,80 @@
+.estatura {
+  margin: 10em auto;
+  width: 71em;
+}
+.estatura h2 {
+  color: rgba(0, 0, 0, 0.664);
+  font-size: 2.8em;
+  text-align: center;
+}
+.estatura hr {
+  margin: 2em auto;
+  width: 7em;
+  border: 0;
+  border-top: 2px solid gainsboro;
+}
+.ambos {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+form button {
+  margin: 0.3em;
+  padding: 0.5em 1em;
+  display: block;
+}
+form button:hover {
+  cursor: pointer;
+  background-color: #01578C;
+}
+.niña > p, .niño > p {
+  margin-top: 13px;
+  font-size: 1.5em;
+  color: #01578C;
+}
+@media only screen and (max-width: 1220px) {
+  .estatura {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* .pediInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pediInfo .pediImgs {
+    margin-bottom: 5em;
+  }
+  .pediDoc {
+    width: 100%;
+  }
+  .pediDoc h1, .pediDoc h2, .pediDoc h3 {
+    text-align: center;
+  }
+  .pediDoc hr {
+    margin: 2em auto;
+  }
+  .consulta, .vacunas {
+    grid-column: 1 / span 2;
+  }
+  .backColor {
+    margin: 5em 0;
+  } */
+  .estatura {
+    margin: 4em auto;
+  }
+  .ambos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .niña, .niño {
+    text-align: center;
+  }
+  #formNiña, #formNiño {
+    margin: 0 auto;
+    display: inline-block;
+  }
+  .niño {
+    margin-top: 3em;
+  }
+}

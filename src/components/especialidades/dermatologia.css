@@ -1,0 +1,59 @@
+.dermatologia .backColor {
+  margin: 4em 0;
+  background-color: rgba(128, 128, 128, 0.048);
+}
+.dermatologia .servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5em;
+  margin: 0 auto;
+  padding: 4em 0;
+  width: 71em;
+  font-weight: 700;
+}
+.dermatologia .servicios h2 {
+  margin-top: 1em;
+  text-align: center;
+  font-weight: 900;
+}
+.dermatologia .servicios hr {
+  margin: 2em auto;
+  border: 0;
+  border-top: 2px solid gainsboro;
+  width: 90px;
+}
+.dermatologia .servicios .unorderList {
+  display: table;
+  margin: 1em auto;
+  width: 85%;
+}
+.dermatologia .servicios li {
+  margin: 1em 0;
+}
+.dermatologia .consulta, .areas {
+  grid-column: 1 / span 2;
+}
+.dermatologia .consulta, .clinica, .estetica {
+  box-shadow: 0 0 20px 2px gray;
+  line-height: 1.5em;
+  border-radius: 1.5em;
+  background-color: white;
+}
+@media only screen and (max-width: 1220px) {
+  .dermatologia .servicios {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .dermatologia .servicios {
+    gap: 2em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .dermatologia .clinica, .estetica {
+    grid-column: 1 / span 2;
+  }
+  .dermatologia .backColor {
+    margin: 5em 0;
+  }
+}

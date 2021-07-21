@@ -1,0 +1,51 @@
+/* **********************************************************************************************************************************************ASEGURADORAS */
+.aseguradorasPorDoctor {
+  margin: 4em auto;
+  width: 71em;
+  /* border: 1px solid red; */
+}
+.aseguradorasPorDoctor h2 {
+  color: rgba(0, 0, 0, 0.664);
+  font-size: 2.8em;
+  text-align: center;
+}
+.aseguradorasPorDoctor hr {
+  margin: 2em auto;
+  width: 7em;
+  border: 0;
+  border-top: 2px solid gainsboro;
+}
+.aseguradorasPorDoctor > p {
+  margin-bottom: 3em;
+  text-align: center;
+}
+.aseguradorasPorDoctor figure {
+  margin: 0.3em;
+  height: auto;
+  width: 10em;
+  overflow: hidden;
+}
+.aseguradorasPorDoctor figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1em solid rgba(41, 216, 219, 0.116);
+  border-radius: 100%;
+  display: block;
+}
+.imgAseguradoras {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+@media only screen and (max-width: 1220px) {
+  .aseguradorasPorDoctor {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aseguradorasPorDoctor {
+    margin: 5em auto;
+  }
+}

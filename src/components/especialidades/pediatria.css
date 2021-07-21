@@ -1,0 +1,51 @@
+.pediatria .backColor {
+  margin: 4em 0;
+  background-color: rgba(128, 128, 128, 0.048);
+}
+.pediatria .servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5em;
+  margin: 0 auto;
+  padding: 4em 0;
+  width: 71em;
+  font-weight: 700;
+}
+.pediatria .servicios h2 {
+  text-align: center;
+  font-weight: 900;
+}
+.pediatria .servicios hr {
+  margin: 2em auto;
+  border: 0;
+  border-top: 2px solid gainsboro;
+  width: 90px;
+}
+.pediatria .servicios p {
+  text-align: center;
+}
+.pediatria .consulta, .vacunas {
+  padding: 2em 0;
+  box-shadow: 0 0 20px 2px gray;
+  line-height: 2em;
+  border-radius: 1.5em;
+  background-color: white;
+}
+@media only screen and (max-width: 1220px) {
+  .pediatria .servicios {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .pediatria .servicios {
+    gap: 2em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pediatria .backColor {
+    margin: 5em 0;
+  }
+  .pediatria .consulta, .pediatria .vacunas {
+    grid-column: 1 / span 2;
+  }
+}
