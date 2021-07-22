@@ -82,7 +82,7 @@ function Pediatria() {
             <p>Hepatitis tipo A</p>
             <p>Hepatitis tipo B</p>
             <p>Sarampión, Paperas y Rubéola</p>
-            <p>Difteria, Tos Ferina y Tétanos</p>
+            <p>Difteria, Tosferina y Tétanos</p>
             <p>Virus del Papiloma Humano (VPH)</p>
           </section>
         </section>

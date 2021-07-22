@@ -39,7 +39,7 @@ function Vacuna() {
               Mejora el umbral inmunológico frente a las bacterias y virus causantes de las infecciones respiratorias.
             </li>
             <li>
-              Reduce el uso de antibióticos y medicamentos utilizados en cuadroas agudos de infección.
+              Reduce el uso de antibióticos y medicamentos utilizados en cuadros agudos de infección.
             </li>
           </ul>
         </section>
@@ -60,7 +60,7 @@ function Vacuna() {
         <section className='pregunta'>
           <h2>¿Reacciones secundarias?</h2>
           <p>
-            No se han descrito reacciones adversas y es compatile con cualquier terapia médica y otro tipo de vacunas.
+            No se han descrito reacciones adversas y es compatible con cualquier terapia médica y otro tipo de vacunas.
           </p>
         </section>
         <section className='pregunta'>
