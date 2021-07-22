@@ -43,9 +43,9 @@ function Psicologia() {
                 <hr />
                 <section className="unorderList">
                 <ul>
-                    <li>Asesoría Psiculógica Especializada de acuerdo al área sulicitada.</li>
+                    <li>Asesoría Psicológica Especializada de acuerdo al área solicitada.</li>
                     <li>Evaluación y diagnóstico de la personalidad, inteligencia, conductual, académica y psico-neurulógica.</li>
-                    <li>Tratamiento Psiculógico focalizado al motivo de consulta.</li>
+                    <li>Tratamiento Psicológico focalizado al motivo de consulta.</li>
                 </ul>
                 </section>
             </section>

@@ -68,7 +68,7 @@ function Pediatria() {
             <p>Talleres</p>
           </section>
           <section className="vacunas">
-            <h2>Vacuncas</h2>
+            <h2>Vacunas</h2>
             <hr />
             <p>Varicela</p>
             <p>Tifoidea</p>
