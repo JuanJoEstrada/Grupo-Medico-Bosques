@@ -42,7 +42,7 @@ function Paidopsiquiatria() {
                 <h2>Consultas</h2>
                 <hr />
                 <p>Valoración del Estado Mental</p>
-                <p>Consulta Medico-Psiquiatrica</p>
+                <p>Consulta Medico-Psiquiátrica</p>
                 <p>Informes Medico-Psiquiátricos</p>
                 <p>Peritajes Psiquiátricos  </p>
                 <p>Asesorías en cualquier tema referente a Salud Mental</p>
