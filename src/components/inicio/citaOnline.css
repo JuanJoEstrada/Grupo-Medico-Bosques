@@ -64,6 +64,7 @@ section.citaOnline .whatsApp figure img {
     text-align: center;
   }
   section.citaOnline .descripcion {
+    margin-right: 0;
     margin-bottom: 2em;
   }
   section.citaOnline .descripcion h3 {
