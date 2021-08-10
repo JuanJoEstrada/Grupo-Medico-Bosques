@@ -1,79 +1,108 @@
 section.citaOnline {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 10em auto;
   width: 71em;
-  /* border: 1px solid red; */
-}
-section.citaOnline {
   padding: 4em;
   border-radius: 1.5em;
   color: white;
   background-color: #01578C;
+  /* border: 1px solid red; */
 }
-section.citaOnline .descripcion {
+
+section.citaOnline .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-right: 1.5em;
 }
-section.citaOnline h3 {
+
+section.citaOnline .description h3 {
   font-size: 2em;
 }
+
 section.citaOnline .numeros a {
   /* width: 17em; */
   color: white;
   text-decoration: none;
 }
+
 section.citaOnline .numeros a:hover {
   color: #01578C;
 }
-section.citaOnline .numeros a p{
+
+section.citaOnline .numeros a p {
   padding: 1em 2em;
   border-radius: 1em;
   text-align: center;
   background-color: #29D8DB;
   /* border: 1px red solid; */
 }
-section.citaOnline .whatsApp {
+
+section.citaOnline .numeros a.whatsApp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 1.5em;
   border-radius: 1em;
   background-color: #29D8DB;
 }
-section.citaOnline .whatsApp figure {
+
+section.citaOnline .numeros a.whatsApp figure {
   width: 3em;
   height: auto;
   overflow: hidden;
 }
-section.citaOnline .whatsApp figure img {
+
+section.citaOnline .numeros a.whatsApp figure img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+
 @media only screen and (max-width: 1220px) {
   section.citaOnline {
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 768px) {
   section.citaOnline {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
   }
-  section.citaOnline .descripcion {
+  section.citaOnline .description {
     margin-right: 0;
     margin-bottom: 2em;
   }
-  section.citaOnline .descripcion h3 {
+  section.citaOnline .description h3 {
     margin-bottom: 0.5em;
   }
 }
+
 @media only screen and (max-width: 480px) {
   section.citaOnline {
     margin: 7em auto;
     padding: 1em;
   }
 }
+/*# sourceMappingURL=citaOnline.css.map */

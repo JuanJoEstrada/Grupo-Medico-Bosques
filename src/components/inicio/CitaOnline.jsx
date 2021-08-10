@@ -5,7 +5,7 @@ import './citaOnline.css'
 function CitaOnline() {
   return (
     <section id='citaOnline' className='citaOnline'>
-      <section className="descripcion">
+      <section className="description">
         <h3>Ahora puedes agendar tu cita ONLINE</h3>
         <p>Tener a tu doctora o doctor en casa, ahora es mucho más sencillo.</p>
       </section>
