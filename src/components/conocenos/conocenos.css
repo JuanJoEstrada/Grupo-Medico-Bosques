@@ -1,41 +1,49 @@
-section.conocenos #Historia, #Mision, #Vision, #Valores {
+section.conocenos #Historia, section.conocenos #Mision, section.conocenos #Vision, section.conocenos #Valores {
   margin: 5em auto;
   width: 71em;
   letter-spacing: 0.05em;
   word-spacing: 0.2em;
   line-height: 1.2em;
 }
-section.conocenos p {
-  line-height: 1.4em;
-}
-section.conocenos #Historia, #Vision {
+
+section.conocenos #Historia, section.conocenos #Vision {
   padding: 4em 1em;
   border-radius: 2em;
   color: white;
-  background-color:#01578C;
+  background-color: #01578C;
 }
+
+section.conocenos #Valores .orderList {
+  display: table;
+  margin: 1em auto;
+  text-align: center;
+}
+
 section.conocenos article h1 {
   font-size: 2em;
   text-align: center;
 }
+
 section.conocenos article hr {
   margin: 2em auto;
   width: 7em;
   border: 0;
   border-top: 2px solid gainsboro;
 }
-section.conocenos .orderList {
-  display: table;
-  margin: 1em auto;
-  text-align: center;
+
+section.conocenos p {
+  line-height: 1.4em;
 }
-@media only screen and (max-width: 1220px){
-  section.conocenos #Historia, #Mision, #Vision, #Valores{
+
+@media only screen and (max-width: 1220px) {
+  section.conocenos #Historia, section.conocenos #Mision, section.conocenos #Vision, section.conocenos #Valores {
     width: 90%;
   }
 }
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px) {
   section.conocenos .orderList {
     padding: 0 5em;
   }
 }
+/*# sourceMappingURL=conocenos.css.map */

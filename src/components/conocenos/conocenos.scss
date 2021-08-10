@@ -1,0 +1,78 @@
+%article-shared {
+  margin: 5em auto;
+  width: 71em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.2em;
+  line-height: 1.2em;
+}
+%different-article-shared {
+  padding: 4em 1em;
+  border-radius: 2em;
+  color: white;
+  background-color:#01578C;
+}
+section.conocenos {
+  #Historia {
+    @extend %article-shared;
+    @extend %different-article-shared;
+  }
+  #Mision {
+    @extend %article-shared;
+  }
+  #Vision {
+    @extend %article-shared;
+    @extend %different-article-shared;
+  }
+  #Valores {
+    @extend %article-shared;
+    
+    .orderList {
+      display: table;
+      margin: 1em auto;
+      text-align: center;
+    }
+  }
+
+  article {
+    h1 {
+      font-size: 2em;
+      text-align: center;
+    }
+    hr {
+      margin: 2em auto;
+      width: 7em;
+      border: 0;
+      border-top: 2px solid gainsboro;
+    }
+  }
+
+  p {
+    line-height: 1.4em;
+  }
+}
+@media only screen and (max-width: 1220px){
+  %width {
+    width: 90%;
+  }
+  section.conocenos {
+    #Historia {
+      @extend %width;
+    }
+    #Mision {
+      @extend %width;
+    }
+    #Vision {
+      @extend %width;
+    }
+    #Valores {
+      @extend %width;
+    }
+  }
+}
+@media only screen and (max-width: 768px){
+  section.conocenos {
+    .orderList {
+      padding: 0 5em;
+    }
+  }
+}
