@@ -1,0 +1,49 @@
+section.aseguradoras {
+  margin: 10em auto;
+  width: 71em;
+  /* border: 1px solid red; */
+}
+section.aseguradoras h2 {
+  color: rgba(0, 0, 0, 0.664);
+  font-size: 2.8em;
+  text-align: center;
+}
+section.aseguradoras hr {
+  margin: 2em auto;
+  width: 7em;
+  border-top: 2px solid gainsboro;
+}
+section.aseguradoras > p {
+  margin-bottom: 3em;
+  text-align: center;
+}
+section.aseguradoras figure {
+  margin: 0.3em;
+  height: auto;
+  width: 10em;
+  overflow: hidden;
+}
+section.aseguradoras figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1em solid rgba(41, 216, 219, 0.116);
+  border-radius: 100%;
+  display: block;
+}
+section.imgAseguradoras {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+@media only screen and (max-width: 1220px) {
+  section.aseguradoras {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  section.aseguradoras {
+    margin: 7em auto;
+  }
+}
