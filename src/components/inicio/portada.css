@@ -12,7 +12,6 @@ section.portada {
   height: 40.6em;
   /* height: 41em; */
   background: -webkit-gradient(linear, left top, right top, color-stop(70%, rgba(1, 87, 140, 0.8)), color-stop(30%, rgba(41, 216, 219, 0.8))), url("../../images/clínica.jpg");
-  background: -webkit-linear-gradient(left, rgba(1, 87, 140, 0.8) 70%, rgba(41, 216, 219, 0.8) 30%), url("../../images/clínica.jpg");
   background: -o-linear-gradient(left, rgba(1, 87, 140, 0.8) 70%, rgba(41, 216, 219, 0.8) 30%), url("../../images/clínica.jpg");
   background: linear-gradient(to right, rgba(1, 87, 140, 0.8) 70%, rgba(41, 216, 219, 0.8) 30%), url("../../images/clínica.jpg");
   color: white;
