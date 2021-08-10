@@ -1,0 +1,124 @@
+%img-shared {
+  width: 100%;
+  height: auto;
+  border-radius: 2em;
+  display: block;
+}
+
+@mixin image($position: relative, $top: 0, $left: 0, $width: 100%) {
+  position: $position;
+  top: $top;
+  left: $left;
+  width: $width;
+  height: auto;
+  overflow: hidden;
+}
+
+section.infoCovid {
+  display: flex;
+  justify-content: space-between;
+  margin: 10em auto;
+  width: 71em;
+  /* border: 1px solid red; */
+
+  .imagenes {
+    position: relative;
+    margin: auto 0;
+    /* border: 1px solid red; */
+    /* position: relative; */
+
+    .imagenVirus {
+      @include image($width: 85%);
+      /* border: 1px solid red; */
+
+      img {
+        @extend %img-shared;
+      }
+
+    }
+
+    .imagenDoctor {
+      @include image(absolute, 14em, 18em, 40%);
+      /* border: 1px solid red; */
+
+      img {
+        @extend %img-shared;
+        border: 0.7em solid white;
+      }
+
+    }
+
+  }
+
+  .normasCovid {
+    width: 45%;
+
+    h2 {
+      color: rgba(0, 0, 0, 0.664);
+      font-size: 3.5em;
+      text-align: center;
+    }
+
+    h3 {
+      color: rgba(0, 0, 0, 0.664);
+      padding: 0.7em 0;
+      font-size: 2.3em;
+      line-height: 1.3em;
+    }
+
+    ol {
+      color: rgba(0, 0, 0, 0.664);
+      padding: 2em 0 2em 1em;
+      line-height: 1.5em;
+      word-spacing: 0.1em;
+      letter-spacing: 0.01em;
+      /* border: 1px solid red; */
+
+      b {
+        font-weight: 900;
+        color: black;
+      }
+      
+    }
+
+    p {
+      text-align: center;
+      padding-top: 1.5em;
+      color: #01578C;
+      font-size: 1.3em;
+      font-weight: 900;
+    }
+
+  }
+
+}
+@media only screen and (max-width: 1220px) {
+  section.infoCovid {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  section.infoCovid {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.infoCovid section.normasCovid {
+    padding-top: 7em;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  section.infoCovid {
+    margin: 7em auto;
+  }
+  section.infoCovid .imagenes .imagenDoctor {
+    top: 50%;
+    left: 60%;
+  }
+  section.infoCovid .normasCovid h2 {
+    font-size: 12vw;
+  }
+  section.infoCovid .normasCovid h3 {
+    font-size: 7vw;
+  }
+}

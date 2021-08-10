@@ -1,16 +1,29 @@
+section.infoCovid .imagenes .imagenVirus img, section.infoCovid .imagenes .imagenDoctor img {
+  width: 100%;
+  height: auto;
+  border-radius: 2em;
+  display: block;
+}
+
 section.infoCovid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 10em auto;
   width: 71em;
   /* border: 1px solid red; */
 }
+
 section.infoCovid .imagenes {
   position: relative;
   margin: auto 0;
   /* border: 1px solid red; */
   /* position: relative; */
 }
+
 section.infoCovid .imagenes .imagenVirus {
   position: relative;
   top: 0;
@@ -20,15 +33,7 @@ section.infoCovid .imagenes .imagenVirus {
   overflow: hidden;
   /* border: 1px solid red; */
 }
-section.infoCovid .imagenVirus img, .imagenDoctor img {
-  width: 100%;
-  height: auto;
-  border-radius: 2em;
-  display: block;
-}
-section.infoCovid .imagenDoctor img {
-  border: 0.7em solid white;
-}
+
 section.infoCovid .imagenes .imagenDoctor {
   position: absolute;
   top: 14em;
@@ -38,21 +43,28 @@ section.infoCovid .imagenes .imagenDoctor {
   overflow: hidden;
   /* border: 1px solid red; */
 }
-section.infoCovid section.normasCovid {
-  width: 45%;
-  /* border: 1px solid red; */
+
+section.infoCovid .imagenes .imagenDoctor img {
+  border: 0.7em solid white;
 }
+
+section.infoCovid .normasCovid {
+  width: 45%;
+}
+
 section.infoCovid .normasCovid h2 {
   color: rgba(0, 0, 0, 0.664);
   font-size: 3.5em;
   text-align: center;
 }
+
 section.infoCovid .normasCovid h3 {
   color: rgba(0, 0, 0, 0.664);
   padding: 0.7em 0;
   font-size: 2.3em;
   line-height: 1.3em;
 }
+
 section.infoCovid .normasCovid ol {
   color: rgba(0, 0, 0, 0.664);
   padding: 2em 0 2em 1em;
@@ -61,10 +73,12 @@ section.infoCovid .normasCovid ol {
   letter-spacing: 0.01em;
   /* border: 1px solid red; */
 }
-section.infoCovid .normasCovid b {
+
+section.infoCovid .normasCovid ol b {
   font-weight: 900;
   color: black;
 }
+
 section.infoCovid .normasCovid p {
   text-align: center;
   padding-top: 1.5em;
@@ -72,21 +86,29 @@ section.infoCovid .normasCovid p {
   font-size: 1.3em;
   font-weight: 900;
 }
+
 @media only screen and (max-width: 1220px) {
   section.infoCovid {
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   section.infoCovid {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   section.infoCovid section.normasCovid {
     padding-top: 7em;
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 480px) {
   section.infoCovid {
     margin: 7em auto;
@@ -102,3 +124,4 @@ section.infoCovid .normasCovid p {
     font-size: 7vw;
   }
 }
+/*# sourceMappingURL=infoCovid.css.map */
