@@ -1,0 +1,115 @@
+section.especialidades {
+  margin: 10em auto;
+  width: 71em;
+  /* border: 1px solid red; */
+}
+section.especialidades h2 {
+  color: rgba(0, 0, 0, 0.664);
+  font-size: 2.8em;
+  text-align: center;
+}
+section.especialidades hr {
+  margin: 2em auto;
+  width: 7em;
+  border-top: 2px solid gainsboro;
+}
+section.especialidades > p {
+  margin-bottom: 3em;
+  text-align: center;
+}
+section.especialidades #logoEspecialidades {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2.5em;
+  background-color: white;
+}
+section.especialidades a.Ginecología {
+  grid-column: 1 / span 2;
+}
+section.especialidades a.Pediatría {
+  grid-column: 3 / span 2;
+}
+section.especialidades a.Dermatología {
+  grid-column: 5 / span 2;
+}
+section.especialidades a.Psicología {
+  grid-column: 1 / span 2;
+}
+section.especialidades a.Paidopsiquiatría {
+  grid-column: 3 / span 2;
+}
+section.especialidades a.Terapia {
+  grid-column: 5 / span 2;
+}
+section.especialidades a.Nutrición {
+  grid-column: 1 / span 3;
+}
+section.especialidades a.Acupuntura {
+  grid-column: 4 / span 3;
+}
+section.especialidades #logoEspecialidades figure {
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  width: 3em;
+  height: auto;
+  overflow: hidden;
+}
+section.especialidades #logoEspecialidades figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+section.especialidades #logoEspecialidades figcaption {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.664);
+  margin-bottom: 1em;
+}
+section.especialidades #logoEspImg {
+  padding: 1em;
+  box-shadow: 0 0 15PX #01578C;
+  border-radius: 1em;
+  /* background-color: rgba(245, 245, 245, 0.616); */
+  text-decoration: none;
+  text-align: center;
+}
+section.especialidades #logoEspImg:hover {
+  box-shadow: inset 0 0 20PX #01578C;
+}
+section.especialidades #logoEspImg > p {
+  color: #01578C;
+}
+@media only screen and (max-width: 1220px) {
+  section.especialidades {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  section.especialidades #logoEspecialidades {
+    gap: 1em;
+  }
+  section.especialidades #logoEspImg {
+    box-shadow: 0 0 10PX #01578C;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section.especialidades a.Ginecología, section.especialidades a.Dermatología, section.especialidades a.Paidopsiquiatría, section.especialidades a.Nutrición {
+    grid-column: 1 / span 3;
+  }
+  section.especialidades a.Pediatría, section.especialidades a.Psicología, section.especialidades a.Terapia, section.especialidades a.Acupunura {
+    grid-column: 4 / span 3;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* ***************************************************************************************************************************************INFOCOVID */
+  section.especialidades {
+    margin: 7em auto;
+  }
+  section.especialidades .especialidades > h2 {
+    font-size: 9vw;
+  }
+  section.especialidades #logoEspecialidades {
+    display: flex;
+    flex-direction: column;
+  }
+}
