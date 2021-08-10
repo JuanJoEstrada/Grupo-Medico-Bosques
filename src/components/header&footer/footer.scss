@@ -1,0 +1,132 @@
+footer {
+  padding: 0 1em;
+  background-image: linear-gradient(180deg,  #29D8DB,  #01578C);
+
+  .info {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 2em 0;
+    /* border-bottom: 1px solid black; */
+
+    > figure {
+      margin: auto 1em;
+      height: auto;
+      width: 15em;
+      overflow: hidden;
+    }
+
+    figure img {
+      height: auto;
+      max-width: 100%;
+      display: block;
+    }
+
+    .footerInfo {
+      display: inline-flex;
+      justify-content: space-between;
+      
+      section {
+        p {
+          padding-right: 1em;
+        }
+      }
+
+      .localizanos {
+        flex-basis: 17em;
+      }
+
+      .iconFace {
+        a {
+          figure {
+            padding: 1em 0;
+            width: 3em;
+            height: auto;
+            overflow: hidden;
+            background-color: #29D8DB;
+            border-radius: 0.5em;
+
+            img {
+              max-width: 20%;
+              margin: 1% auto;
+              height: auto;
+              display: block;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  hr {
+    margin: 0 auto;
+    width: 90%;
+    border: 0;
+    border-top: 2px solid  gainsboro;
+  }
+
+  .copyright {
+    padding: 2em 0;
+
+    a {
+      text-decoration: none;
+    }
+    
+    p {
+      padding: 0.5em 0;
+      text-align: center;
+      color: white;
+    }
+  }
+
+}
+@media only screen and (max-width: 1024px) {
+  footer {
+    .info {
+      figure {
+        width: 20em;
+      }
+      .footerInfo {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+        > section {
+          margin: 1.5em 0;
+        }
+
+        .localizanos {
+          p {
+            padding-right: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    .info {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 2em;
+
+      .footerInfo {
+        display: block;
+        text-align: center;
+
+        > section {
+          margin: 1.5em 0;
+        }
+
+        .iconFace {
+          a {
+            figure {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

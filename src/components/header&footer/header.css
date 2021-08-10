@@ -4,11 +4,14 @@ header a img {
   width: 12em;
   /* border: 1px red solid; */
 }
-header nav:after {
+
+header nav::after {
   content: "";
-  clear: both; /*elemento es movido hacia abajo para limpiar tanto elementos flotntes de la izquierda como la derecha*/
+  clear: both;
+  /*elemento es movido hacia abajo para limpiar tanto elementos flotntes de la izquierda como la derecha*/
   display: table;
 }
+
 header nav ul {
   float: right;
   list-style: none;
@@ -17,6 +20,7 @@ header nav ul {
   position: relative;
   /* border: 1px red solid; */
 }
+
 header nav ul li {
   float: left;
   /* display: inline-block; */
@@ -24,6 +28,7 @@ header nav ul li {
   background-color: white;
   /* border: 1px red solid; */
 }
+
 header nav ul li a {
   color: rgba(0, 0, 0, 0.664);
   text-decoration: none;
@@ -31,37 +36,49 @@ header nav ul li a {
   font-size: 1em;
   letter-spacing: 0.05em;
 }
+
+header nav ul li a:hover {
+  color: #29D8DB;
+  -webkit-transition: color 50ms ease-in-out;
+  -o-transition: color 50ms ease-in-out;
+  transition: color 50ms ease-in-out;
+}
+
+header nav ul li a:focus {
+  color: #29D8DB;
+}
+
 header nav ul li a.despues::after {
   content: "\02C5";
   margin-left: 0.4em;
 }
-header nav ul li a:hover {
-  color: #29D8DB;
-  transition: color 50ms ease-in-out;
-}
-header nav ul li a:focus {
-  color: #29D8DB;
-}
+
 header nav ul li ul.subMenu {
   position: absolute;
   top: 80px;
-  visibility: hidden; 
-  transition: top 300ms; /*primero aparece en 90 y luego en 80px*/
+  visibility: hidden;
+  -webkit-transition: top 300ms;
+  -o-transition: top 300ms;
+  transition: top 300ms;
+  /*primero aparece en 90 y luego en 80px*/
 }
+
+header nav ul li ul.subMenu li {
+  position: relative;
+  margin: 0;
+  padding-left: 1em;
+  width: 12em;
+  float: none;
+  display: list-item;
+}
+
 header nav ul li:hover ul.subMenu {
   top: 70px;
   visibility: visible;
   border-top: 1px solid #29D8DB;
 }
-header nav ul li ul.subMenu li {
-  position: relative;
-  margin: 0;
-  padding-left: 1em; 
-  width: 12em;
-  float: none;
-  display: list-item;
-}
-button {
+
+header nav button {
   float: left;
   font-size: 1.2em;
   letter-spacing: 0.05em;
@@ -71,15 +88,18 @@ button {
   color: white;
   background-color: #29D8DB;
   border: 1px none;
-  outline:none
+  outline: none;
 }
-.navega button:hover {
+
+header nav button:hover {
   cursor: pointer;
   background-color: #01578C;
 }
-.muestra, .iconBarra, input.inputHeader {
+
+header .muestra, header .iconBarra, header input.inputHeader {
   display: none;
 }
+
 @media only screen and (max-width: 1220px) {
   /* *************************************************************************HEADER */
   header nav {
@@ -89,11 +109,13 @@ button {
     display: none;
   }
 }
+
 @media only screen and (max-width: 1024px) {
-  /* ******************************************************************************************************************************************HEADER */
-  header nav ul li a {
+  header nav ul li, header nav ul li ul.subMenu li {
+    display: block;
     margin: 0;
-    margin-left: 2%;
+    padding: 0;
+    width: 100%;
     /* border: 1px red solid; */
   }
   header nav ul {
@@ -101,11 +123,9 @@ button {
     float: left;
     /* border: 1px red solid; */
   }
-  header nav ul li, header nav ul li ul.subMenu li {
-    display: block;
+  header nav ul li a {
     margin: 0;
-    padding: 0;
-    width: 100%;
+    margin-left: 2%;
     /* border: 1px red solid; */
   }
   header nav ul li ul.subMenu {
@@ -121,7 +141,16 @@ button {
   header nav ul li ul.subMenu li a {
     margin-left: 7%;
   }
-  .muestra {
+  header .iconBarra {
+    display: block;
+    position: absolute;
+    right: 40px;
+    margin-top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    /* border: 1px red solid; */
+  }
+  header .muestra {
     display: block;
     color: rgba(0, 0, 0, 0.664);
     font-size: 1em;
@@ -131,28 +160,20 @@ button {
     cursor: pointer;
     /* border: 1px red solid; */
   }
-  .muestra:hover {
+  header .muestra:hover {
     color: #29D8DB;
+    -webkit-transition: color 50ms ease-in-out;
+    -o-transition: color 50ms ease-in-out;
     transition: color 50ms ease-in-out;
   }
-  .iconBarra {
-    display: block;
-    position: absolute;
-    right: 40px;
-    margin-top: 20px;
-    font-size: 25px;
-    cursor: pointer;
-    /* border: 1px red solid; */
-  }
-  .muestra + a, nav > ul {
+  header .muestra + a, header nav > ul {
     display: none;
   }
-  #boton:checked + nav > ul, 
-  #boton-conoce:checked + ul.subMenu, 
-  #boton-especialidad:checked + ul.subMenu {
-    display: block;
-  }
-  /* .navega > a > button {
-    display: none;
-  } */
 }
+
+#boton:checked + nav > ul,
+#boton-conoce:checked + ul.subMenu,
+#boton-especialidad:checked + ul.subMenu {
+  display: block;
+}
+/*# sourceMappingURL=header.css.map */
