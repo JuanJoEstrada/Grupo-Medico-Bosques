@@ -1,0 +1,69 @@
+%section-config-one {
+  /* border: 1px solid red; */
+  margin: 1em 0 1em 0;
+}
+%section-p-config {
+  margin: 1em auto 0 auto;
+  width: 90%;
+  /* border: 1px solid red; */
+}
+section.contacto {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+
+  hr {
+    margin: 2em auto;
+    width: 15em;
+    border: 0;
+    border-top: 2px solid #29D8DB;
+  }
+
+  .section1 {
+    @extend %section-config-one;
+
+    p {
+      @extend %section-p-config;
+    }
+  }
+
+  .section2 {
+    @extend %section-config-one;
+
+    p {
+      @extend %section-p-config;
+    }
+  }
+
+  .horarios {
+    margin: 1em;
+
+    .hora {
+      display: flex;
+      justify-content: center;
+      /* border: 1px solid red; */
+
+      p {
+        margin: 0.5em;
+        font-weight: 600;
+      }
+
+      .dia {
+        width: 4.5em;
+        text-align: right;
+      }
+
+      .horaEspecial {
+        color: #29D8DB;
+      }
+    }
+  }
+
+  .section3 {
+    margin: 1em 0 4em 0;
+
+    p {
+      @extend %section-p-config;
+    }
+  }
+}
