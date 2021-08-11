@@ -1,44 +1,55 @@
-.nutricion .backColor {
+section.nutricion .backColor .servicios .consulta h2 {
+  text-align: center;
+  font-weight: 900;
+}
+
+section.nutricion .backColor .servicios .consulta hr {
+  margin: 2em auto;
+  border: 0;
+  border-top: 2px solid gainsboro;
+  width: 90px;
+}
+
+section.nutricion .backColor .servicios .consulta p {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+section.nutricion .backColor .servicios .consulta {
+  padding: 2em 0;
+  -webkit-box-shadow: 0 0 20px 2px gray;
+          box-shadow: 0 0 20px 2px gray;
+  line-height: 2em;
+  border-radius: 1.5em;
+  background-color: white;
+}
+
+section.nutricion .backColor {
   margin: 4em 0;
   background-color: rgba(128, 128, 128, 0.048);
 }
-.nutricion .servicios {
+
+section.nutricion .backColor .servicios {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   gap: 5em;
   margin: 0 auto;
   padding: 4em 0;
   width: 71em;
   font-weight: 700;
 }
-.nutricion .servicios h2 {
-  text-align: center;
-  font-weight: 900;
-}
-.nutricion .servicios hr {
-  margin: 2em auto;
-  border: 0;
-  border-top: 2px solid gainsboro;
-  width: 90px;
-}
-.nutricion .servicios p {
-  margin: 1.5em 0;
-  text-align: center;
-}
-.nutricion .consulta {
-  padding: 1em;
-  box-shadow: 0 0 20px 2px gray;
-  line-height: 1.5em;
-  border-radius: 1.5em;
-  background-color: white;
-}
+
 @media only screen and (max-width: 1220px) {
-  .nutricion .servicios {
+  section.nutricion .backColor .servicios {
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 768px) {
-  .nutricion .backColor {
+  section.nutricion .backColor {
     margin: 5em 0;
   }
 }
+/*# sourceMappingURL=nutricion.css.map */
