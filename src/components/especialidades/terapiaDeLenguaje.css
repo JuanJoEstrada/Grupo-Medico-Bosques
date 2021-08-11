@@ -1,59 +1,82 @@
-.terapiaDeLenguaje .backColor {
+section.terapiaDeLenguaje .backColor .servicios .talleres, section.terapiaDeLenguaje .backColor .servicios .asesoramiento, section.terapiaDeLenguaje .backColor .servicios .consulta {
+  -webkit-box-shadow: 0 0 20px 2px gray;
+          box-shadow: 0 0 20px 2px gray;
+  line-height: 1.5em;
+  border-radius: 1.5em;
+  background-color: white;
+}
+
+section.terapiaDeLenguaje .backColor .servicios .talleres h2, section.terapiaDeLenguaje .backColor .servicios .asesoramiento h2, section.terapiaDeLenguaje .backColor .servicios .consulta h2 {
+  margin-top: 1em;
+  text-align: center;
+  font-weight: 900;
+}
+
+section.terapiaDeLenguaje .backColor .servicios .talleres hr, section.terapiaDeLenguaje .backColor .servicios .asesoramiento hr, section.terapiaDeLenguaje .backColor .servicios .consulta hr {
+  margin: 2em auto;
+  border: 0;
+  border-top: 2px solid gainsboro;
+  width: 90px;
+}
+
+section.terapiaDeLenguaje .backColor .servicios .talleres .unorderList, section.terapiaDeLenguaje .backColor .servicios .asesoramiento .unorderList, section.terapiaDeLenguaje .backColor .servicios .consulta .unorderList {
+  display: table;
+  margin: 1em auto;
+  width: 85%;
+}
+
+section.terapiaDeLenguaje .backColor .servicios .talleres .unorderList li, section.terapiaDeLenguaje .backColor .servicios .asesoramiento .unorderList li, section.terapiaDeLenguaje .backColor .servicios .consulta .unorderList li {
+  margin: 1em 0;
+}
+
+section.terapiaDeLenguaje .backColor {
   margin: 4em 0;
   background-color: rgba(128, 128, 128, 0.048);
 }
-.terapiaDeLenguaje .servicios {
+
+section.terapiaDeLenguaje .backColor .servicios {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 5em;
   margin: 0 auto;
   padding: 4em 0;
   width: 71em;
   font-weight: 700;
 }
-.terapiaDeLenguaje .servicios h2 {
-  margin-top: 1em;
-  text-align: center;
-  font-weight: 900;
-}
-.terapiaDeLenguaje .servicios hr {
-  margin: 2em auto;
-  border: 0;
-  border-top: 2px solid gainsboro;
-  width: 90px;
-}
-.terapiaDeLenguaje .servicios .unorderList {
-  display: table;
-  margin: 1em auto;
-  width: 85%;
-}
-.terapiaDeLenguaje .servicios li {
-  margin: 1em 0;
-}
-.terapiaDeLenguaje .talleres, .areas {
+
+section.terapiaDeLenguaje .backColor .servicios .talleres {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
 }
-.terapiaDeLenguaje .talleres, .terapiaDeLenguaje .asesoramiento, .terapiaDeLenguaje .consulta {
-  box-shadow: 0 0 20px 2px gray;
-  line-height: 1.5em;
-  border-radius: 1.5em;
-  background-color: white;
-}
+
 @media only screen and (max-width: 1220px) {
-  .terapiaDeLenguaje .servicios {
+  section.terapiaDeLenguaje .backColor .servicios {
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 1024px) {
-  .terapiaDeLenguaje .servicios {
+  section.terapiaDeLenguaje .backColor .servicios {
     gap: 2em;
   }
 }
+
 @media only screen and (max-width: 768px) {
-  .terapiaDeLenguaje .asesoramiento, .terapiaDeLenguaje .consulta {
-    grid-column: 1 / span 2;
-  }
-  .terapiaDeLenguaje .backColor {
+  section.terapiaDeLenguaje .backColor {
     margin: 5em 0;
   }
+  section.terapiaDeLenguaje .backColor .servicios .asesoramiento {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  section.terapiaDeLenguaje .backColor .servicios .consulta {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
 }
+/*# sourceMappingURL=terapiaDeLenguaje.css.map */
