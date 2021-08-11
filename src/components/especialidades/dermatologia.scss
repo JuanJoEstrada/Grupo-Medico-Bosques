@@ -1,0 +1,97 @@
+%servicios-config {
+  box-shadow: 0 0 20px 2px gray;
+  line-height: 1.5em;
+  border-radius: 1.5em;
+  background-color: white;
+
+  h2 {
+    margin-top: 1em;
+    text-align: center;
+    font-weight: 900;
+  }
+
+  hr {
+    margin: 2em auto;
+    border: 0;
+    border-top: 2px solid gainsboro;
+    width: 90px;
+  }
+
+  .unorderList {
+    display: table;
+    margin: 1em auto;
+    width: 85%;
+
+    li {
+      margin: 1em 0;
+    }
+  }
+
+}
+section.dermatologia {
+  .backColor {
+    margin: 4em 0;
+    background-color: rgba(128, 128, 128, 0.048);
+
+    .servicios {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5em;
+      margin: 0 auto;
+      padding: 4em 0;
+      width: 71em;
+      font-weight: 700;
+
+
+      .consulta {
+        @extend %servicios-config;
+        grid-column: 1 / span 2;
+      }
+
+      .clinica {
+        @extend %servicios-config;
+      }
+
+      .estetica {
+        @extend %servicios-config;
+      }
+
+    }
+  }
+}
+@media only screen and (max-width: 1220px) {
+  section.dermatologia {
+    .backColor {
+      .servicios {
+        width: 90%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  section.dermatologia {
+    .backColor {
+      .servicios {
+        gap: 2em;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  section.dermatologia {
+    .backColor {
+      margin: 5em 0;
+      .servicios {
+        
+        .clinica {
+          grid-column: 1 / span 2;
+        }
+  
+        .estetica {
+          grid-column: 1 / span 2;
+        }
+  
+      }
+    }
+  }
+}

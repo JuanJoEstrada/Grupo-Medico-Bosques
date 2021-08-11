@@ -1,59 +1,82 @@
-.dermatologia .backColor {
+section.dermatologia .backColor .servicios .consulta, section.dermatologia .backColor .servicios .clinica, section.dermatologia .backColor .servicios .estetica {
+  -webkit-box-shadow: 0 0 20px 2px gray;
+          box-shadow: 0 0 20px 2px gray;
+  line-height: 1.5em;
+  border-radius: 1.5em;
+  background-color: white;
+}
+
+section.dermatologia .backColor .servicios .consulta h2, section.dermatologia .backColor .servicios .clinica h2, section.dermatologia .backColor .servicios .estetica h2 {
+  margin-top: 1em;
+  text-align: center;
+  font-weight: 900;
+}
+
+section.dermatologia .backColor .servicios .consulta hr, section.dermatologia .backColor .servicios .clinica hr, section.dermatologia .backColor .servicios .estetica hr {
+  margin: 2em auto;
+  border: 0;
+  border-top: 2px solid gainsboro;
+  width: 90px;
+}
+
+section.dermatologia .backColor .servicios .consulta .unorderList, section.dermatologia .backColor .servicios .clinica .unorderList, section.dermatologia .backColor .servicios .estetica .unorderList {
+  display: table;
+  margin: 1em auto;
+  width: 85%;
+}
+
+section.dermatologia .backColor .servicios .consulta .unorderList li, section.dermatologia .backColor .servicios .clinica .unorderList li, section.dermatologia .backColor .servicios .estetica .unorderList li {
+  margin: 1em 0;
+}
+
+section.dermatologia .backColor {
   margin: 4em 0;
   background-color: rgba(128, 128, 128, 0.048);
 }
-.dermatologia .servicios {
+
+section.dermatologia .backColor .servicios {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 5em;
   margin: 0 auto;
   padding: 4em 0;
   width: 71em;
   font-weight: 700;
 }
-.dermatologia .servicios h2 {
-  margin-top: 1em;
-  text-align: center;
-  font-weight: 900;
-}
-.dermatologia .servicios hr {
-  margin: 2em auto;
-  border: 0;
-  border-top: 2px solid gainsboro;
-  width: 90px;
-}
-.dermatologia .servicios .unorderList {
-  display: table;
-  margin: 1em auto;
-  width: 85%;
-}
-.dermatologia .servicios li {
-  margin: 1em 0;
-}
-.dermatologia .consulta, .areas {
+
+section.dermatologia .backColor .servicios .consulta {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
 }
-.dermatologia .consulta, .clinica, .estetica {
-  box-shadow: 0 0 20px 2px gray;
-  line-height: 1.5em;
-  border-radius: 1.5em;
-  background-color: white;
-}
+
 @media only screen and (max-width: 1220px) {
-  .dermatologia .servicios {
+  section.dermatologia .backColor .servicios {
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 1024px) {
-  .dermatologia .servicios {
+  section.dermatologia .backColor .servicios {
     gap: 2em;
   }
 }
+
 @media only screen and (max-width: 768px) {
-  .dermatologia .clinica, .estetica {
-    grid-column: 1 / span 2;
-  }
-  .dermatologia .backColor {
+  section.dermatologia .backColor {
     margin: 5em 0;
   }
+  section.dermatologia .backColor .servicios .clinica {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  section.dermatologia .backColor .servicios .estetica {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
 }
+/*# sourceMappingURL=dermatologia.css.map */
