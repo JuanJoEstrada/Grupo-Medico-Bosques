@@ -1,51 +1,70 @@
-.pediatria .backColor {
+section.pediatria .backColor .servicios .consulta h2, section.pediatria .backColor .servicios .vacunas h2 {
+  text-align: center;
+  font-weight: 900;
+}
+
+section.pediatria .backColor .servicios .consulta hr, section.pediatria .backColor .servicios .vacunas hr {
+  margin: 2em auto;
+  border: 0;
+  border-top: 2px solid gainsboro;
+  width: 90px;
+}
+
+section.pediatria .backColor .servicios .consulta p, section.pediatria .backColor .servicios .vacunas p {
+  text-align: center;
+}
+
+section.pediatria .backColor .servicios .consulta, section.pediatria .backColor .servicios .vacunas {
+  padding: 2em 0;
+  -webkit-box-shadow: 0 0 20px 2px gray;
+          box-shadow: 0 0 20px 2px gray;
+  line-height: 2em;
+  border-radius: 1.5em;
+  background-color: white;
+}
+
+section.pediatria .backColor {
   margin: 4em 0;
   background-color: rgba(128, 128, 128, 0.048);
 }
-.pediatria .servicios {
+
+section.pediatria .backColor .servicios {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 5em;
   margin: 0 auto;
   padding: 4em 0;
   width: 71em;
   font-weight: 700;
 }
-.pediatria .servicios h2 {
-  text-align: center;
-  font-weight: 900;
-}
-.pediatria .servicios hr {
-  margin: 2em auto;
-  border: 0;
-  border-top: 2px solid gainsboro;
-  width: 90px;
-}
-.pediatria .servicios p {
-  text-align: center;
-}
-.pediatria .consulta, .vacunas {
-  padding: 2em 0;
-  box-shadow: 0 0 20px 2px gray;
-  line-height: 2em;
-  border-radius: 1.5em;
-  background-color: white;
-}
+
 @media only screen and (max-width: 1220px) {
-  .pediatria .servicios {
+  section.pediatria .backColor .servicios {
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 1024px) {
-  .pediatria .servicios {
+  section.pediatria .backColor .servicios {
     gap: 2em;
   }
 }
+
 @media only screen and (max-width: 768px) {
-  .pediatria .backColor {
+  section.pediatria .backColor {
     margin: 5em 0;
   }
-  .pediatria .consulta, .pediatria .vacunas {
+  section.pediatria .backColor .servicios .consulta {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  section.pediatria .backColor .servicios .vacunas {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
   }
 }
+/*# sourceMappingURL=pediatria.css.map */
