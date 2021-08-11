@@ -5,7 +5,7 @@ header a img {
   /* border: 1px red solid; */
 }
 
-header nav::after {
+header nav:after {
   content: "";
   clear: both;
   /*elemento es movido hacia abajo para limpiar tanto elementos flotntes de la izquierda como la derecha*/

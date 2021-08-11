@@ -1,68 +1,88 @@
-.ginecologia .backColor {
+section.ginecologia .backColor .servicios .consulta, section.ginecologia .backColor .servicios figure {
+  margin: 0 1em;
+  padding: 1em;
+  text-align: center;
+  -webkit-box-shadow: 0 0 20px 2px gray;
+          box-shadow: 0 0 20px 2px gray;
+  border-radius: 1.5em;
+  background-color: white;
+}
+
+section.ginecologia .backColor {
   margin: 4em 0;
   background-color: rgba(128, 128, 128, 0.048);
 }
-.ginecologia .servicios {
+
+section.ginecologia .backColor .servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0 auto;
   padding: 4em 0;
   width: 71em;
   font-weight: 700;
 }
-.ginecologia .servicios h2 {
+
+section.ginecologia .backColor .servicios .consulta h2 {
   margin-top: 1em;
   text-align: center;
   font-weight: 900;
 }
-.ginecologia .servicios hr {
+
+section.ginecologia .backColor .servicios .consulta hr {
   margin: 2em auto;
   border: 0;
   border-top: 2px solid gainsboro;
   width: 90px;
 }
-.ginecologia .consulta, .servicios figure {
-  margin: 0 1em;
-  padding: 1em;
-  text-align: center;
-  box-shadow: 0 0 20px 2px gray;
-  border-radius: 1.5em;
-  background-color: white;
-}
-.ginecologia .consulta p {
+
+section.ginecologia .backColor .servicios .consulta p {
   margin: 2em 0;
 }
-.ginecologia .otroColor {
+
+section.ginecologia .backColor .servicios .consulta .otroColor {
   margin: 1em 0;
   text-align: center;
-  color:  gray;
+  color: gray;
 }
-.ginecologia .servicios figure {
+
+section.ginecologia .backColor .servicios figure {
   margin: auto 0;
   height: auto;
   width: 20em;
   overflow: hidden;
 }
-.ginecologia .servicios figure img {
+
+section.ginecologia .backColor .servicios figure img {
   height: auto;
   width: 100%;
   display: block;
 }
+
 @media only screen and (max-width: 1220px) {
-  .ginecologia .servicios {
+  section.ginecologia .backColor .servicios {
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 768px) {
-  .ginecologia .consulta {
+  section.ginecologia .backColor .servicios {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.ginecologia .backColor .servicios .consulta {
     margin: 0;
     margin-bottom: 2em;
   }
-  .ginecologia .servicios {
-    flex-direction: column;
-    align-items: center;
-  }
-  .ginecologia .servicios figure {
+  section.ginecologia .backColor .servicios figure {
     width: 100%;
   }
 }
+/*# sourceMappingURL=ginecologia.css.map */
