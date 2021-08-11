@@ -1,80 +1,87 @@
-.estatura {
+@charset "UTF-8";
+article.estatura .ambos .niña > p, article.estatura .ambos .niño > p {
+  margin-top: 13px;
+  font-size: 1.5em;
+  color: #01578C;
+}
+
+article.estatura .ambos .niña form button, article.estatura .ambos .niño form button {
+  margin: 0.3em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  background-color: #29D8DB;
+  color: white;
+  border: 1px none;
+  outline: none;
+}
+
+article.estatura .ambos .niña form button:hover, article.estatura .ambos .niño form button:hover {
+  cursor: pointer;
+  background-color: #01578C;
+}
+
+article.estatura {
   margin: 10em auto;
   width: 71em;
 }
-.estatura h2 {
+
+article.estatura h2 {
   color: rgba(0, 0, 0, 0.664);
   font-size: 2.8em;
   text-align: center;
 }
-.estatura hr {
+
+article.estatura hr {
   margin: 2em auto;
   width: 7em;
   border: 0;
   border-top: 2px solid gainsboro;
 }
-.ambos {
+
+article.estatura .ambos {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-form button {
-  margin: 0.3em;
-  padding: 0.5em 1em;
-  display: block;
-}
-form button:hover {
-  cursor: pointer;
-  background-color: #01578C;
-}
-.niña > p, .niño > p {
-  margin-top: 13px;
-  font-size: 1.5em;
-  color: #01578C;
-}
+
 @media only screen and (max-width: 1220px) {
-  .estatura {
+  article.estatura {
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 768px) {
-  /* .pediInfo {
-    flex-direction: column;
-    align-items: center;
-  }
-  .pediInfo .pediImgs {
-    margin-bottom: 5em;
-  }
-  .pediDoc {
-    width: 100%;
-  }
-  .pediDoc h1, .pediDoc h2, .pediDoc h3 {
-    text-align: center;
-  }
-  .pediDoc hr {
-    margin: 2em auto;
-  }
-  .consulta, .vacunas {
-    grid-column: 1 / span 2;
-  }
-  .backColor {
-    margin: 5em 0;
-  } */
-  .estatura {
+  article.estatura {
     margin: 4em auto;
   }
-  .ambos {
-    flex-direction: column;
-    align-items: center;
+  article.estatura .ambos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .niña, .niño {
+  article.estatura .ambos .niña {
     text-align: center;
   }
-  #formNiña, #formNiño {
+  article.estatura .ambos .niña form {
     margin: 0 auto;
     display: inline-block;
   }
-  .niño {
+  article.estatura .ambos .niño {
+    text-align: center;
     margin-top: 3em;
   }
+  article.estatura .ambos .niño form {
+    margin: 0 auto;
+    display: inline-block;
+  }
 }
+/*# sourceMappingURL=estatura.css.map */

@@ -1,0 +1,105 @@
+
+%infante-p {
+  margin-top: 13px;
+  font-size: 1.5em;
+  color: #01578C;
+}
+%form-button {
+  margin: 0.3em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  background-color: #29D8DB;
+  color: white;
+  border: 1px none;
+  outline:none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #01578C;
+  }
+}
+article.estatura {
+  margin: 10em auto;
+  width: 71em;
+
+  h2 {
+    color: rgba(0, 0, 0, 0.664);
+    font-size: 2.8em;
+    text-align: center;
+  }
+
+  hr {
+    margin: 2em auto;
+    width: 7em;
+    border: 0;
+    border-top: 2px solid gainsboro;
+  }
+
+  .ambos {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    .niña {
+
+      form {
+        button {
+          @extend %form-button;
+        }
+      }
+
+      > p {
+        @extend %infante-p;
+      }
+    }
+
+    .niño {
+
+      form {
+        button {
+          @extend %form-button;
+        }
+      }
+
+      > p {
+        @extend %infante-p;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1220px) {
+  article.estatura {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  article.estatura {
+    margin: 4em auto;
+  
+    .ambos {
+      flex-direction: column;
+      align-items: center;
+  
+      .niña {
+        text-align: center;
+  
+        form {
+          margin: 0 auto;
+          display: inline-block;
+        }
+      }
+  
+      .niño {
+        text-align: center;
+        margin-top: 3em;
+  
+        form {
+          margin: 0 auto;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
