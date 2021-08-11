@@ -1,56 +1,123 @@
-.psicologia .backColor {
+section.psicologia .backColor .servicios .consulta, section.psicologia .backColor .servicios .educativa, section.psicologia .backColor .servicios .clinica, section.psicologia .backColor .servicios .laboral, section.psicologia .backColor .servicios .talleres, section.psicologia .backColor .servicios .intervencion, section.psicologia .backColor .servicios .prevencion {
+  -webkit-box-shadow: 0 0 20px 2px gray;
+          box-shadow: 0 0 20px 2px gray;
+  line-height: 1.5em;
+  border-radius: 1.5em;
+  background-color: white;
+}
+
+section.psicologia .backColor .servicios .consulta h2, section.psicologia .backColor .servicios .educativa h2, section.psicologia .backColor .servicios .clinica h2, section.psicologia .backColor .servicios .laboral h2, section.psicologia .backColor .servicios .talleres h2, section.psicologia .backColor .servicios .intervencion h2, section.psicologia .backColor .servicios .prevencion h2 {
+  margin-top: 1em;
+  text-align: center;
+  font-weight: 900;
+}
+
+section.psicologia .backColor .servicios .consulta hr, section.psicologia .backColor .servicios .educativa hr, section.psicologia .backColor .servicios .clinica hr, section.psicologia .backColor .servicios .laboral hr, section.psicologia .backColor .servicios .talleres hr, section.psicologia .backColor .servicios .intervencion hr, section.psicologia .backColor .servicios .prevencion hr {
+  margin: 2em auto;
+  border: 0;
+  border-top: 2px solid gainsboro;
+  width: 90px;
+}
+
+section.psicologia .backColor .servicios .consulta .unorderList, section.psicologia .backColor .servicios .educativa .unorderList, section.psicologia .backColor .servicios .clinica .unorderList, section.psicologia .backColor .servicios .laboral .unorderList, section.psicologia .backColor .servicios .talleres .unorderList, section.psicologia .backColor .servicios .intervencion .unorderList, section.psicologia .backColor .servicios .prevencion .unorderList {
+  display: table;
+  margin: 1em auto;
+  width: 85%;
+}
+
+section.psicologia .backColor .servicios .consulta .unorderList li, section.psicologia .backColor .servicios .educativa .unorderList li, section.psicologia .backColor .servicios .clinica .unorderList li, section.psicologia .backColor .servicios .laboral .unorderList li, section.psicologia .backColor .servicios .talleres .unorderList li, section.psicologia .backColor .servicios .intervencion .unorderList li, section.psicologia .backColor .servicios .prevencion .unorderList li {
+  margin: 1em 0;
+}
+
+section.psicologia .backColor {
   margin: 4em 0;
   background-color: rgba(128, 128, 128, 0.048);
 }
-.psicologia .servicios {
+
+section.psicologia .backColor .servicios {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 5em;
   margin: 0 auto;
   padding: 4em 0;
   width: 71em;
   font-weight: 700;
 }
-.psicologia .servicios h2 {
+
+section.psicologia .backColor .servicios .consulta {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+section.psicologia .backColor .servicios .areas {
+  line-height: 1.5em;
+  border-radius: 1.5em;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+section.psicologia .backColor .servicios .areas h2 {
   margin-top: 1em;
   text-align: center;
   font-weight: 900;
 }
-.psicologia .servicios hr {
+
+section.psicologia .backColor .servicios .areas hr {
   margin: 2em auto;
   border: 0;
   border-top: 2px solid gainsboro;
   width: 90px;
 }
-.psicologia .servicios .unorderList {
-  display: table;
-  margin: 1em auto;
-  width: 85%;
-}
-.psicologia .servicios li {
-  margin: 1em 0;
-}
-.psicologia .consulta, .areas {
-  grid-column: 1 / span 2;
-}
-.psicologia .consulta, .psicologia .educativa, .psicologia .clinica, .psicologia .laboral, .psicologia .talleres, .psicologia .intervencion, .psicologia .prevencion {
-  box-shadow: 0 0 20px 2px gray;
-  line-height: 1.5em;
-  border-radius: 1.5em;
-  background-color: white;
-}
+
 @media only screen and (max-width: 1220px) {
-  .psicologia .servicios {
+  section.psicologia .backColor .servicios {
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 1024px) {
-  .psicologia .servicios {
+  section.psicologia .backColor .servicios {
     gap: 2em;
   }
 }
+
 @media only screen and (max-width: 768px) {
-  .psicologia .educativa, .psicologia .clinica, .psicologia .laboral, .psicologia .talleres, .psicologia .intervencion, .psicologia .prevencion {
+  section.psicologia .backColor {
+    margin: 5em 0;
+  }
+  section.psicologia .backColor .servicios .educativa {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  section.psicologia .backColor .servicios .clinica {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  section.psicologia .backColor .servicios .laboral {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  section.psicologia .backColor .servicios .talleres {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  section.psicologia .backColor .servicios .intervencion {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  section.psicologia .backColor .servicios .prevencion {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
   }
 }
+/*# sourceMappingURL=psicologia.css.map */

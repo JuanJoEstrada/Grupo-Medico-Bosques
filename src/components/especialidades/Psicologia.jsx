@@ -50,7 +50,7 @@ function Psicologia() {
                 </section>
             </section>
             <section className="areas">
-                <h2>Áreas a indicar</h2>
+                <h2>Áreas a Indicar</h2>
                 <hr />
             </section>
             <section className="educativa">
