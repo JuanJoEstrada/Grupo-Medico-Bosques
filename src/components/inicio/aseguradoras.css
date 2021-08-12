@@ -21,6 +21,17 @@ section.aseguradoras > p {
   text-align: center;
 }
 
+section.aseguradoras .imgAseguradoras {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 section.aseguradoras .imgAseguradoras figure {
   margin: 0.3em;
   height: auto;
